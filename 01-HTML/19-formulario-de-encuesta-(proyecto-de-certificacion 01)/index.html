@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Formulario de encuesta sobre nuestra tienda</h1>
+    <p id="description">Gracias por sus comentarios sobre nuestra tienda.</p>
+
+    <form id="survey-form">
+      <fieldset> <!-- Datos Personales -->
+        <legend>Datos Personales:</legend><br>
+        <label for="name" id="name-label">Nombre:</label>
+        <input id="name" name="nombre" type="text" placeholder="Ingrese su nombre..." required><br>
+
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Ingrese su email..." required><br>
+
+        <label for="number" id="number-label">Edad &#40;opcional&#41;:</label>
+        <input id="number" name="edad" type="number" min="18" max="100" placeholder="18">
+      </fieldset>
+
+      <fieldset> <!-- Selección de sección -->
+        <label for="dropdown">¿Que sección le agrada más de la tienda?</label>
+        <select name="service" id="dropdown" required>
+          <option value="">Seleccione una opción</option>
+          <option value="mangas">Mangas</option>
+          <option value="comics">Comics</option>
+          <option value="figuras">Figuras</option>
+        </select>
+      </fieldset>
+
+      <fieldset> <!-- Uso de radio -->
+        <p>¿Con qué frecuencia compras en la tienda?</p>
+
+        <input type="radio" id="semanal" name="frecuencia" value="semanal">
+        <label for="semanal">Semanalmente</label>
+
+        <input type="radio" id="mensual" name="frecuencia" value="mensual">
+        <label for="mensual">Mensualmente</label>
+
+        <input type="radio" id="raravez" name="frecuencia" value="raravez">
+        <label for="raravez">Rara vez</label>
+      </fieldset>
+
+      <fieldset> <!-- Uso de checkboxes -->
+        <p>¿Qué productos nuevos esperas con ansias en la tienda? <span>Marca todos los que quieras</span></p>
+
+        <input type="checkbox" id="accesorios" name="productos" value="accesorios">
+        <label for="accesorios">Accesorios</label>
+
+        <input type="checkbox" id="gachapones" name="productos" value="gachapones">
+        <label for="gachapones">Gachapones</label>
+
+        <input type="checkbox" id="libros" name="productos" value="libros">
+        <label for="libros">Libros</label>
+
+        <input type="checkbox" id="videojuegos" name="productos" value="videojuegos">
+        <label for="videojuegos">Videojuegos</label>
+      </fieldset>
+
+      <fieldset> <!-- Comentarios opcionales -->
+        <label for="comentarios">¿Algún comentario o sugerencia?</label><br>
+        <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí tu comentario..."></textarea>
+      </fieldset>
+
+      <button type="submit" id="submit">Enviar</button> <!-- Botón para enviar -->
+    </form>
+</body>
+</html>
