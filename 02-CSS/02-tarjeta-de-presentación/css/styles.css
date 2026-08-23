@@ -1,0 +1,54 @@
+body {
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.business-card {
+  width: 300px;
+  background-color: beige;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.profile-image {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.volver {
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.volver a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: burlywood;
+  color: brown;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.volver a:hover {
+  background-color: brown;
+  color: burlywood;
+}
