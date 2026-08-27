@@ -1,0 +1,60 @@
+/* 
+  Proyecto: Styled To-Do List
+  Concepto practicado: Pseudo-clases de enlaces en CSS
+    - a:link = enlace no visitado
+    - a:visited = enlace ya visitado  
+    - a:hover = al pasar el mouse
+    - a:active = al hacer click
+    - a:focus = navegación con teclado
+    - a { text-decoration: none } = sin subrayado
+*/
+
+.sub-item {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  outline: 2px solid orange;
+}
+
+.volver {
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.volver a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: burlywood;
+  color: brown;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.volver a:hover {
+  background-color: brown;
+  color: burlywood;
+}
