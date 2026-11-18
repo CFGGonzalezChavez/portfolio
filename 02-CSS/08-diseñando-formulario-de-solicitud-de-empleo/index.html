@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de empleo</h1>
+        <form>
+            <label for="name">Nombre completo: </label>
+            <input type="text" id="name" name="name" placeholder="E.j. Juan Peréz" required>
+            <label for="email">Correo electronico: </label>
+            <input type="email" id="email" name="email" placeholder="E.j. juan@email.com" required>
+            <label for="position">Puesto al que postulas</label>
+            <select id="position" name="position" required>
+                <option value="">Selecciona un puesto</option>
+                <option value="developer">Desarrollador</option>
+                <option value="designer">Diseñador</option>
+                <option value="support">Soporte</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>Disponibilidad</legend>
+                <label>
+                    <input type="radio" name="availability" value="full-time" checked> Full-Time
+                </label>
+                <label>
+                    <input type="radio" name="availability" value="part-time"> Part-Time
+                </label>
+                <label>
+                    <input type="radio" name="availability" value="remote"> Remoto
+                </label>
+            </fieldset>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Contanos por qué querés el puesto..." required></textarea>
+            <button type="submit">Enviar Solicitud</button
+            >
+        </form>
+    </div>
+</body>
+</html>
